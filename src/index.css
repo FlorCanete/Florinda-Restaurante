@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'PlayFair-Italic';
+  src: url('./assets/fonts/PlayFair/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype-variations'),
+       url('./assets/fonts/PlayFair/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PlayFair';
+  src: url('./assets/fonts/PlayFair/PlayfairDisplay-VariableFont_wght.ttf') format('truetype-variations'),
+       url('./assets/fonts/PlayFair/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SplineSans';
+  src: url('./assets/fonts/SplineSans/SplineSans-VariableFont_wght.ttf') format('truetype-variations'),
+       url('./assets/fonts/SplineSans/SplineSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.PlayFair-Italic {
+  font-family: 'PlayFair-Italic', serif;
+}
+
+.PlayFair {
+  font-family: 'PlayFair', serif;
+}
+
+.SplineSans {
+  font-family: 'SplineSans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111614;
+  font-family: 'SplineSans';
+}
+
+header {
+  background-color: rgba(17, 22, 20, .6);
+}
+
+
+footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #FFFFFF;
+
+  & > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  & > div:nth-child(2) {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      padding: .2rem;
+      cursor: pointer;
+      position: relative;
+
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #36E27B;
+        transform-origin: bottom left;
+        transition: transform 0.25s ease-out;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  small {
+    color: #888888;
+  }
+}
+
+.our-actions {
+  background: #1E2E25;
+  background: linear-gradient(110deg,rgba(30, 46, 37, 1) 0%, rgba(25, 35, 29, 1) 100%);
+}
+
+.inpiration-section {
+  padding: 6rem 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    p {
+      color: #FFFFFF;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+  }
+
+  .inspiration-img {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 300px;
+    height: 500px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      border-radius: 2rem;
+    }
+
+    p {
+      padding: 1rem 2rem;
+    }
+  }
+
+  .inspiration-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      font-size: 3rem;
+      font-family: PlayFair;
+      color:#FFFFFF;
+
+      span {
+        color: #36E27B;
+      }
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+
+      svg {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  article {
+    flex: 1;
+    color: #FFFFFF;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #3d3f38;
+  margin: 2rem 0;
+}
+
+.our-actions {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+
+  p {
+    color: #FFFFFF;
+  }
+
+  div {
+    display: flex;
+    gap: 2rem;
+
+    article {
+      background-color: #1A251F;
+      border-radius: 1rem;
+      padding: 2rem;
+      color: #FFFFFF;
+      max-width: 720px;
+      width: 100%;
+      max-height: 630px;
+      height: 100%;
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      ul {
+        list-style-type: disc;
+        margin-left: 2rem;
+        margin-top: 1rem;
+
+        li {
+          margin-bottom: .5rem;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
