@@ -13,7 +13,6 @@ export interface RestaurantCardProps {
 
 export const ServiceCard = (
   {
-    category,
     title,
     description,
     linkLabel,

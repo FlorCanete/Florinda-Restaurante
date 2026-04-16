@@ -1,6 +1,5 @@
 import '../App.css'
 import { Text } from '../assets/components/atoms/Text'
-import { AppLinks } from '../assets/components/atoms/navLink/NavLink'
 import { Utensils } from 'lucide-react'
 import ImageHero from '../assets/images/asado.png'
 import { ServiceCardsSection } from '@/assets/components/templates/CardServicesSection'

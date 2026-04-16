@@ -20,11 +20,10 @@ export function Hero ({
     tag,
     title,
     description,
-    height = 'full',
     actions,
 } : HeroProps) {
     return (
-        <HeroTemplate image={image} altText={altText} height={height}>
+        <HeroTemplate image={image} altText={altText}>
             {tag && (
                 <Text as="p" variant="p" className="text-[#36E27B] font-black text-md tracking-widest">
                     {tag}
