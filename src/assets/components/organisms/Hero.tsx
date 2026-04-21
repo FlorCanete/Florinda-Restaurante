@@ -34,7 +34,7 @@ export function Hero ({
 
             {actions && (
                 <div className='flex justify-center items-center gap-5 flex-wrap'>
-                    <AppLinks as="Link" to="/reservas" variant="button_primary">Reservar mi mesa</AppLinks>
+                    <AppLinks as="ExternalLink" to="https://wa.me/549112345678" variant="button_primary">Reservar mi mesa</AppLinks>
                     <AppLinks as="Link" to="/menu" variant="button_secondary">Explorar el menu</AppLinks>
                 </div>
             )}

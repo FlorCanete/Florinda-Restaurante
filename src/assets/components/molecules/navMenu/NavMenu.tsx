@@ -3,9 +3,9 @@ import { AppLinks } from "../../atoms/navLink/NavLink"
 export const NAV_LINKS = [
     { name: 'Inicio', path: '/' },
     { name: 'Servicios', path: '/our' },
+    { name: 'Menu', path: '/menu' },
     { name: 'Ecoacciones', path: '/ecoacciones' },
     { name: 'Ubicacion', path: '/location' },
-    { name: 'Menu', path: '/Menu' },
 ]
 
 export const NavMenu = () => {

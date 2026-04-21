@@ -15,6 +15,7 @@ interface LinkProps {
   variant: LinkVariant;
   to: string;
   aditionalClassName?: string;
+    onClick?: () => void;
 }
 
 export const AppLinks = ({
@@ -23,6 +24,7 @@ export const AppLinks = ({
   as: Tag = 'NavLink',
   to,
   aditionalClassName = '',
+  onClick,
 }: LinkProps) => {
   const variantStyles = LinkStyles[variant];
 
@@ -50,6 +52,7 @@ export const AppLinks = ({
         className={({ isActive }) =>
           `${variantStyles} ${aditionalClassName} ${isActive ? 'text-[#36E27B] after:scale-x-100' : ''}`
         }
+        onClick={onClick}
       >
         {children}
       </NavLink>

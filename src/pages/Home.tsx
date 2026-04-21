@@ -1,6 +1,6 @@
 import '../App.css'
 import { Text } from '../assets/components/atoms/Text'
-import { MapPin, Utensils } from 'lucide-react'
+import { Clock, MapPin, Utensils } from 'lucide-react'
 import ImageHero from '../assets/images/asado.png'
 import { ServiceCardsSection } from '@/assets/components/templates/CardServicesSection'
 import { serviceCards } from '@/assets/data/servicesCards'
@@ -40,7 +40,7 @@ function Home() {
         </section>
 
         <section className="h-auto px-7 md:px-15 py-20 flex flex-col gap-10 bg-[#192B21]">
-            <div className='flex flex-col md:flex-row justify-between items-center gap-1 border-[#3d3f38] pb-8'>
+            <div className='flex flex-col md:flex-row justify-between items-center gap-6 border-[#3d3f38] pb-8'>
                 <div className='flex flex-col gap-6 justify-center'>
 
                     <Text as='h2' variant='h2'>En el corazon de la maravilla natural</Text>
@@ -57,7 +57,7 @@ function Home() {
 
                     <article className='flex gap-6 items-center'>
                         <div className="bg-[#1D392A] w-12 h-12 flex justify-center items-center rounded-full">
-                            <MapPin className='text-[#36E27B]' />
+                            <Clock className='text-[#36E27B]' />
                         </div>
                         <div className="">
                             <Text as="p" variant="p" className='text-white font-bold'>Horarios</Text>
@@ -69,7 +69,7 @@ function Home() {
                         Ver mapa completo
                     </AppLinks>
                 </div>
-                <div className="h-140 w-230 rounded-lg overflow-hidden">
+                <div className="h-140 w-full md:w-230 rounded-lg overflow-hidden">
                     <LocationMap />
                 </div>
             </div>

@@ -30,6 +30,7 @@ export const ServiceCard = (
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
       <div className="relative z-10 flex flex-col gap-2">
+        
         <Text as="h3" variant="h3" className="font-bold">{title}</Text>
         <Text as="p" variant="p" className="text-[#CCCCCC]">{description}</Text>
         <AppLinks as="Link" to={linkHref} variant="link_underline" aditionalClassName="flex items-center gap-1 font-bold text-[#36E27B]">

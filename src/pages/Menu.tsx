@@ -1,7 +1,12 @@
+import {MenuRestaurant} from '@/assets/components/templates/MenuRestaurant'
+import {SectionTemplate} from '@/assets/components/templates/SectionTemplate'
+
+import { MenuCardData } from '@/assets/data/MenuCardData'
+
 export default function Menu() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Menu Page</h1>
-    </div>
+    <SectionTemplate additionalClassName='h-screen'>
+      <MenuRestaurant cards={MenuCardData} />
+    </SectionTemplate>
   )
 }

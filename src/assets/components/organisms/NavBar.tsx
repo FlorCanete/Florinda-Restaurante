@@ -38,7 +38,7 @@ export const NavBar = () => {
                 </nav>
 
                 <div className="hidden md:block">
-                    <AppLinks as="Link" to="/menu" variant="button_primary">Reservar Mesa</AppLinks>
+                    <AppLinks as="ExternalLink" to="https://wa.me/549112345678" variant="button_primary">Reservar Mesa</AppLinks>
                 </div>
 
                 <button
@@ -65,13 +65,14 @@ export const NavBar = () => {
                                     as="NavLink"
                                     variant="nav_link"
                                     aditionalClassName="text-lg"
+                                    onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}
                                 </AppLinks>
                             </li>
                         ))}
                     </ul>
-                    <AppLinks as="Link" to="/menu" variant="button_primary">Reservar Mesa</AppLinks>
+                    <AppLinks as="ExternalLink" to="https://wa.me/549112345678" variant="button_primary">Reservar Mesa</AppLinks>
                 </nav>
             </div>
 

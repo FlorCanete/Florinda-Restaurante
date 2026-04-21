@@ -21,7 +21,7 @@ function App() {
           <Route path="/ecoacciones" element={<Ecoacciones />}></Route>
           <Route path="/our" element={<Our />}></Route>
           <Route path="/location" element={<Location />}></Route>
-          <Route path="/restaurantmenu" element={<Menu />}></Route>
+          <Route path="/menu" element={<Menu />}></Route>
         </Routes>
       </main>
 
