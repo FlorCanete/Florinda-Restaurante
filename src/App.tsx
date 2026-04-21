@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate, HashRouter } from 'react-router-dom'
 import './App.css'
 import Ecoacciones from './pages/Ecoacciones'
 import Menu from './pages/Menu'
@@ -12,20 +12,22 @@ function App() {
 
   return (
     <>
-      <NavBar />
+    <HashRouter>
+        <NavBar />
 
-      <main>
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/ecoacciones" element={<Ecoacciones />}></Route>
-          <Route path="/our" element={<Our />}></Route>
-          <Route path="/location" element={<Location />}></Route>
-          <Route path="/menu" element={<Menu />}></Route>
-        </Routes>
-      </main>
+        <main>
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/ecoacciones" element={<Ecoacciones />}></Route>
+            <Route path="/our" element={<Our />}></Route>
+            <Route path="/location" element={<Location />}></Route>
+            <Route path="/menu" element={<Menu />}></Route>
+          </Routes>
+        </main>
 
-      <Footer></Footer>
+        <Footer></Footer>
+      </HashRouter>
     </>
   )
 }
