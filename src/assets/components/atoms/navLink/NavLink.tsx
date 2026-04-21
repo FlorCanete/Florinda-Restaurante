@@ -11,7 +11,7 @@ type LinkVariant = keyof typeof LinkStyles;
 
 interface LinkProps {
   children: React.ReactNode;
-  as?: 'NavLink' | 'Link' | 'ExternalLink'; // 👈
+  as?: 'NavLink' | 'Link' | 'ExternalLink';
   variant: LinkVariant;
   to: string;
   aditionalClassName?: string;
@@ -30,7 +30,6 @@ export const AppLinks = ({
     throw new Error(`La variante "${variant}" no existe.`);
   }
 
-  // 👇 nuevo caso
   if (Tag === 'ExternalLink') {
     return (
       <a

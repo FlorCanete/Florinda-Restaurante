@@ -5,6 +5,7 @@ export const NAV_LINKS = [
     { name: 'Servicios', path: '/our' },
     { name: 'Ecoacciones', path: '/ecoacciones' },
     { name: 'Ubicacion', path: '/location' },
+    { name: 'Menu', path: '/Menu' },
 ]
 
 export const NavMenu = () => {

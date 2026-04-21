@@ -1,7 +1,7 @@
 import { LocationCard } from '../organisms/LocationCard'
 import { LocationMap } from '../organisms/LocationMap'
 
-export function LocationSection() {
+export function LocationTemplate() {
     return (
         <section className="relative h-screen">
             <LocationMap />

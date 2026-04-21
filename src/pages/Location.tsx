@@ -1,9 +1,9 @@
-import { LocationSection } from '@/assets/components/templates/LocationSection'
+import { LocationTemplate } from '@/assets/components/templates/LocationTemplate'
 
 
 function Location() {
   return (
-    <LocationSection></LocationSection>
+    <LocationTemplate></LocationTemplate>
   )
 }
 

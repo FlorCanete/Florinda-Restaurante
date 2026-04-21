@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 import Ecoacciones from './pages/Ecoacciones'
+import Menu from './pages/Menu'
 import Location from './pages/Location'
 import Home from './pages/Home'
 import Our from './pages/Our'
@@ -20,6 +21,7 @@ function App() {
           <Route path="/ecoacciones" element={<Ecoacciones />}></Route>
           <Route path="/our" element={<Our />}></Route>
           <Route path="/location" element={<Location />}></Route>
+          <Route path="/restaurantmenu" element={<Menu />}></Route>
         </Routes>
       </main>
 
